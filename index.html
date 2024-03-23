@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>jobfinderhub</title>
-    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"><link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <!--Font Awesome Icons CDN-->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -15,7 +17,7 @@
 </head>
       
 <body>
-    <header>
+    
     <!--Navigation-->
         <nav>
                 <img src="gra.png" alt="logo">
@@ -26,13 +28,64 @@
                 <li><a href="login.html">Login</a></li>
                 <li><a href="signup.html">Signup</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                
-
             </ul>
+            
+            <div class="profile-dropdown">
+                <div class="profile-dropdown-btn" onclick="toggle()">
+                    <div class="profile-img">
+                    </div>
+                    <span>
+                        My profile
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </span>
+                </div>
+                <ul class="profile-dropdown-list">
+                    <li class="profile-dropdown-list-item">
+                        <a href="#">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li class="profile-dropdown-list-item">
+                        <a href="#">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            Inbox
+                        </a>
+                    </li>
+                    <li class="profile-dropdown-list-item">
+                        <a href="#">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                            Analytics
+                        </a>
+                    </li>
+                    <li class="profile-dropdown-list-item">
+                        <a href="#">
+                            <ion-icon name="settings-outline"></ion-icon>
+                            Settings
+                        </a>
+                    </li>
+                    <li class="profile-dropdown-list-item">
+                        <a href="#">
+                            <ion-icon name="log-in-outline"></ion-icon>
+                            Log out 
+                        </a>
+                    </li>
+                </ul>
+            </div>
             </div>
         </nav>
-    </header>
+<script>
+        let profileDropdownlist = document.querySelector(".profile-dropdown-list");
+        let btn = document.querySelector(".profile-dropdown-btn");
+    
+        const toggle = () => profileDropdownlist.classList.toggle("active");
+    
+        window.addEventListener("click", function (e) {
+            if (!btn.contains(e.target)) profileDropdownlist.classList.remove("active");
+        });
+</script>
+    
+
         
         <!-- home -->
         <section id="home">
@@ -47,9 +100,9 @@
                         <div class="footer-col">
                             <h4>Company</h4>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Services</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
                             </ul>
                         </div>
@@ -58,7 +111,7 @@
                             <ul>
                                 <li><a href="#">Blog</a></li>
                                 <li><a href="#">FAQs</a></li>
-                                <li><a href="#">Support</a></li>
+                                <li><a href="contact.html">Support</a></li>
                             </ul>
                         </div>
                         <div class="footer-col">

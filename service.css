@@ -134,11 +134,10 @@ nav .navigation ul {
     align-items: center;
 }
 nav .navigation ul li {
-    list-style:none;
-    margin-left: 150px;
-
+    display: inline-block;
+    margin: 0 5rem;
 }
-nav .navigation .btnlogin-popup{
+/*nav .navigation .btnlogin-popup{
     width: 130px;
     height: 50px;
     background: transparent;
@@ -150,10 +149,10 @@ nav .navigation .btnlogin-popup{
     color: #ffffff;
     font-weight: 500;
     margin-left: 40px;
-}
+}*/
 nav .navigation ul li a {
     text-decoration:none;
-    color: rgb(21, 21, 100);
+    color: rgb(212, 25, 103);
     font-size: 28px;
     font-weight: 600;
     transition: 0.3 ease;
