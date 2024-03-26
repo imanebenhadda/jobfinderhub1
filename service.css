@@ -133,9 +133,10 @@ nav .navigation ul {
     justify-content: flex-end;
     align-items: center;
 }
-nav .navigation ul li {
+nav .navigation>ul>li {
     display: inline-block;
     margin: 0 5rem;
+    margin-right: 20%;
 }
 /*nav .navigation .btnlogin-popup{
     width: 130px;

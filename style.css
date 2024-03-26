@@ -63,20 +63,7 @@ nav .navigation > ul > li {
     display: inline-block;
     margin: 0 5rem;
 }
-/*nav .navigation .btnlogin-popup{
-    width: 130px;
-    height: 50px;
-    background: transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #ffffff;
-    font-weight: 500;
-    margin-left: 40px;
-}*/
-/* Styles for navigation links */
+
 nav .navigation > ul > li > a {
     text-decoration: none;
     color: rgb(212, 25, 103);
